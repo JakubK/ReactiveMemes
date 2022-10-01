@@ -1,0 +1,17 @@
+.footer {
+    margin-top: auto;
+    background: #3B3835;
+
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em 0.5em;
+    font-size: 0.8em;
+
+    &__copy {
+        color: #FFFCF2;
+    }
+
+    &__link {
+        color: #EB5E28;
+    }
+}
