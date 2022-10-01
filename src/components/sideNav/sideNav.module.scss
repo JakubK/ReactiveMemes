@@ -1,0 +1,23 @@
+.sidenav {
+    position: sticky;
+    top: 3em;
+    width: 100vw;
+    height: 100%;
+    background: #252422;
+    padding: 0.7em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__top, &__bottom {
+        display: grid;
+        row-gap: 0.5em;
+        column-gap: 0.5em;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__bottom {
+        margin-top: 0.5em; 
+    }
+}

@@ -1,0 +1,16 @@
+.sidenav-item {
+    color: #FFFcF2;
+    background: #403D39;
+    border-radius: 1em;
+    padding: 1em;
+    min-height: 157px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+        background: #EB5E28;
+    }
+}
