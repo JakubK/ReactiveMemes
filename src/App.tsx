@@ -4,7 +4,7 @@ import SideNav from './components/sideNav/sideNav';
 
 import classes from './App.module.scss';
 
-function App() {
+const app = () =>  {
   return (
     <div className={classes.app}>
       <Navbar/>
@@ -14,4 +14,4 @@ function App() {
   )
 }
 
-export default App
+export default app
