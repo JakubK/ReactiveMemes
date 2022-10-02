@@ -1,9 +1,13 @@
+import React from 'react';
+import { SideNavContext, SideNavContextType } from '../../context/sideNarContext';
 import classes from './sideNav.module.scss';
 import SideNavItem from './sideNavItem';
 
 const sideNav = () => {
+    const { isActive } = React.useContext(SideNavContext) as SideNavContextType;
+    const classNames = `${classes.sidenav} ${ isActive ? classes['sidenav--hidden'] : ''}`;
     return (
-        <aside className={classes.sidenav}>
+        <aside className={classNames}>
             <div className={classes.sidenav__top}>
                 <SideNavItem title="Recent"></SideNavItem>
                 <SideNavItem title="Fresh"></SideNavItem>
